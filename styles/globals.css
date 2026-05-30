@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #444;
+}
+
+/* Prose styles for blog posts */
+.prose-mono h1,
+.prose-mono h2,
+.prose-mono h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+
+.prose-mono p {
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.prose-mono a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
