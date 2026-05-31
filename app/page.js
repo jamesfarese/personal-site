@@ -93,7 +93,7 @@ export default function Home() {
 
           <div className="text-sm md:text-base leading-relaxed text-gray-600 dark:text-gray-400 max-w-lg space-y-3">
             <p>
-              i&apos;ve spent the last sixteen years building{' '}
+              i&apos;ve spent most of the last sixteen years building{' '}
               <Highlight>things that didn&apos;t exist</Highlight> until i made them.
               companies, products, teams — the whole stack.
             </p>
