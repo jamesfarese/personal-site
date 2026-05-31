@@ -4,7 +4,7 @@ const todos = [
   { text: 'finish the essay', done: false },
   { text: 'raise the round', done: false },
   { text: 'call mom', done: false },
-  { text: 'make money', done: false },
+  { text: 'get profitable', done: false },
 ]
 
 export default function TodoWidget() {
