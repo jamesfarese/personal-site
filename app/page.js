@@ -87,13 +87,13 @@ export default function Home() {
             james farese — builder
           </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight mb-8">
-            <span className="block">i make companies.</span>
-            <span className="block text-gray-400 dark:text-gray-600">i think they&apos;re art.</span>
+            <span className="block">i build companies.</span>
+            <span className="block text-gray-400 dark:text-gray-600">it&apos;s my art.</span>
           </h1>
 
           <div className="text-sm md:text-base leading-relaxed text-gray-600 dark:text-gray-400 max-w-lg space-y-3">
             <p>
-              i&apos;ve spent the last decade building{' '}
+              i&apos;ve spent the last sixteen years building{' '}
               <Highlight>things that didn&apos;t exist</Highlight> until i made them.
               companies, products, teams — the whole stack.
             </p>
