@@ -42,22 +42,28 @@ function ArrowSVG() {
 
 const companies = [
   {
-    name: 'company one',
-    description: 'a product that changed how people think about X. built from zero to acquisition in 3 years.',
-    year: '2019–2022',
-    tag: 'acquired',
+    name: 'ReachLink',
+    url: 'https://reachlink.com',
+    description: '',
+    tag: null,
   },
   {
-    name: 'company two',
-    description: 'infrastructure for the next generation of Y. currently scaling.',
-    year: '2022–present',
-    tag: 'active',
+    name: 'Brigadier',
+    url: 'https://getbrigadier.com',
+    description: '',
+    tag: null,
   },
   {
-    name: 'company three',
-    description: 'a small tool that solves a specific problem really well. profitable from day one.',
-    year: '2023–present',
-    tag: 'active',
+    name: 'Edifi',
+    url: 'https://tryedifi.com',
+    description: '',
+    tag: null,
+  },
+  {
+    name: 'PitLane',
+    url: 'https://trypitlane.com',
+    description: '',
+    tag: null,
   },
 ]
 
@@ -119,29 +125,35 @@ export default function Home() {
         <p className="text-[10px] uppercase tracking-[0.3em] text-gray-400 dark:text-gray-600 mb-8">
           selected work
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-gray-100 dark:bg-gray-900 border border-gray-100 dark:border-gray-900">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-gray-100 dark:bg-gray-900 border border-gray-100 dark:border-gray-900">
           {companies.map((co, i) => (
-            <div
+            <a
               key={i}
-              className="bg-white dark:bg-black p-6 hover:bg-gray-50 dark:hover:bg-gray-950 transition-colors group"
+              href={co.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white dark:bg-black p-6 hover:bg-gray-50 dark:hover:bg-gray-950 transition-colors group flex flex-col justify-between min-h-[100px]"
             >
-              <div className="flex items-start justify-between mb-3">
-                <span className="text-xs font-bold uppercase tracking-wider">{co.name}</span>
-                <span
-                  className={`text-[10px] uppercase tracking-widest px-2 py-0.5 ${
+              <div className="flex items-start justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider group-hover:underline underline-offset-4 decoration-[#ffe066]">
+                  {co.name}
+                </span>
+                {co.tag && (
+                  <span className={`text-[10px] uppercase tracking-widest px-2 py-0.5 ${
                     co.tag === 'acquired'
                       ? 'bg-[#ffe066] text-black'
                       : 'bg-gray-100 dark:bg-gray-900 text-gray-500 dark:text-gray-400'
-                  }`}
-                >
-                  {co.tag}
-                </span>
+                  }`}>
+                    {co.tag}
+                  </span>
+                )}
               </div>
-              <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
-                {co.description}
-              </p>
-              <p className="text-[10px] text-gray-300 dark:text-gray-700">{co.year}</p>
-            </div>
+              {co.description && (
+                <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed mt-3">
+                  {co.description}
+                </p>
+              )}
+            </a>
           ))}
         </div>
       </section>
