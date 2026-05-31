@@ -10,7 +10,7 @@ export default function NavBar() {
       >
         james farese
       </Link>
-      <div className="flex items-center gap-6 text-sm font-mono text-gray-500 dark:text-gray-400">
+      <div className="flex items-center gap-6 text-sm font-mono text-gray-600 dark:text-gray-300">
         <Link href="/blog" className="hover:text-black dark:hover:text-white transition-colors">
           writing
         </Link>
