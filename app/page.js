@@ -146,6 +146,38 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Onedrop Ventures */}
+      <section className="px-6 md:px-16 lg:px-24 py-20 border-t border-gray-100 dark:border-gray-900">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.3em] text-gray-400 dark:text-gray-600 mb-2">
+              onedrop ventures
+            </p>
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              i invest in other people&apos;s art, too.
+            </p>
+          </div>
+          <a
+            href="https://onedrop.ventures"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[10px] uppercase tracking-widest text-gray-400 dark:text-gray-600 hover:text-black dark:hover:text-white transition-colors shrink-0"
+          >
+            onedrop.ventures →
+          </a>
+        </div>
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-px bg-gray-100 dark:bg-gray-900 border border-gray-100 dark:border-gray-900">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div
+              key={i}
+              className="bg-white dark:bg-black aspect-square flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-950 transition-colors"
+            >
+              <div className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-800" />
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Writing */}
       <section className="px-6 md:px-16 lg:px-24 py-20 border-t border-gray-100 dark:border-gray-900">
         <div className="flex items-center justify-between mb-8">
